@@ -31,7 +31,7 @@ function onClick(event) {
     <img src="${event.target.dataset.source}" width="800" height="600">`,
         {
             onShow: instance => { document.addEventListener('keydown', onEscapeKeyDown); },
-            onClose: instance => { document.addEventListener('keydown', onEscapeKeyDown); }
+            onClose: instance => { document.removeEventListener('keydown', onEscapeKeyDown); }
         });
     instance.show()
     function onEscapeKeyDown(event) {
