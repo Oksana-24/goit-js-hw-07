@@ -4,8 +4,6 @@ import { galleryItems } from './gallery-items.js';
 //console.log(galleryItems);
 
 const gallery = document.querySelector('.gallery');
-//console.dir(gallery)
-
 
 const markup = galleryItems.reduce((acc, { preview, original, description }) =>
     acc + `
